@@ -1,41 +1,44 @@
-Project Title: **TechnoElevate Learning and Mentoring System**
+Project Title: TechnoElevate Learning and Mentoring System
+Overview
+The TechnoElevate Learning and Mentoring System is an innovative application designed to automate and streamline learning and mentorship processes within the organization. This comprehensive platform facilitates efficient data management and seamless interaction among administrators, mentors, and employees/trainees.
 
-### Overview
-The TechnoElevate Learning and Mentoring System is an application designed to automate and streamline the learning and mentoring processes within the organization. It serves as a comprehensive platform facilitating efficient data management and interaction among administrators, mentors, and employees/trainees.
+Description
+This project involves creating an application encompassing essential components:
 
-### Description
-The project involves the creation of an application with the following key components:
-1. **Database Setup**
-   - Establish a database named "LMS" to store essential information.
-   - Design and create necessary tables such as employee_primary_Info, employee_secondary_info, employee_education_info, employee_address_info, employee_back_details, employee_experience_info, employee_technicalskills_info, employee_experience_info, employee_contact_info, batch_details, mock_details, and mentor_details.
+Database Setup
 
-2. **Functionalities**
+Establish a robust database named "LMS" to efficiently store and manage critical information.
+Design and implement necessary tables such as employee details, batch information, mentor details, and various other entities required for comprehensive data management.
+Functionalities
 
-   #### Admin
-   - **Batch Management:** Creation, Editing, Deletion, and Search of batches including Batch ID, Name, Mentor details, Technologies, Start & End Dates, and Status.
-   - **Mentor Management:** Create, Edit, Delete, and Search for mentor details comprising Name, Employee ID, Email ID, and Skills.
-   - **Registration Approval:** Approve/Reject employee/trainee registration requests, assigning relevant Batch Name and ID.
-   - **Global Search:** Search functionality for Mentor/Employee details.
+Admin
+Batch and Mentor Management: Creation, Editing, and Deletion of batches with pertinent details including Mentor information, Technologies, Dates, and Status.
+Registration Approval: Approval/Rejection of employee/trainee registrations with batch assignment.
+Global Search: Search functionality for Mentor/Employee details.
+Mentor
+Security Integration: Implementation of Spring Security for robust authentication and role-based authorization.
+Dashboard and Employee Management: Access to batch statistics, attendance, creation of mocks, performance analytics, and employee status management.
 
-   #### Mentor
-   - **Password Reset:** Prompt for password reset using the auto-generated password sent via email.
-   - **Dashboard:** Visual representation of Batch statistics and performance data.
-   - **Employee Management:** Search employee details, Edit employee status, View Batch details, Take Attendance, Create Mocks, Provide Mock ratings, and View employee performance analytics.
-   - **Data Export:** Download Employee, Attendance, and Mock Data in Excel format.
+Employee/Trainee
+Profile Management: Add/Edit personal, educational, and contact details.
+Graphical Representation: Track attendance, mock progress via graphical representation.
+Integration of Swagger: Incorporation of Swagger for detailed API documentation and testing functionalities.
+Technologies Used
 
-   #### Employee/Trainee
-   - **Password Reset:** Password reset using the auto-generated password received via email.
-   - **Dashboard:** Track attendance sessions, Mock/Re-mock progress via graphical representation.
-   - **Profile Management:** Add/Edit Primary Info, Secondary Info, Education, Address, Bank Details, Technical Skills, Experience, and Contact details.
+Database: MySQL
+Backend: Java (Spring Framework)
+Security Integration: Spring Security for robust authentication and authorization.
+API Documentation: Swagger for comprehensive API documentation and testing.
+References
+Design Reference for App Development (Admin functionalities)
+Design Reference for Mentor Panel (Mentor functionalities)
+Design Reference for Employee Panel (Employee/Trainee functionalities)
+Project Objectives
+The TechnoElevate Learning and Mentoring System aims to:
 
-### Technologies Used
-- **Database:** MySQL or MongoDB
-- **Backend:** Java (Spring) or Node/Express
-- **Frontend:** Angular or React
-
-### References
-- [Design Reference for App Development](https://xd.adobe.com/view/d3531e20-d9d1-4509-b10c-b5a1779d4bcd-8600/) (Admin functionalities)
-- [Design Reference for Mentor Panel](https://xd.adobe.com/view/7c759877-9b02-43d0-91c8-d83c4e855bea-2926/) (Mentor functionalities)
-- [Design Reference for Employee Panel](https://xd.adobe.com/view/4f9575c5-4e3e-483f-9f67-a7d8d2bf0567-1ac6) (Employee/Trainee functionalities)
-
-The TechnoElevate Learning and Mentoring System aims to enhance organizational learning experiences, optimize mentorship programs, and provide an efficient platform for comprehensive data management and interaction among different user roles.
+Optimize organizational learning experiences.
+Streamline mentorship programs.
+Provide a secure and efficient platform for comprehensive data management and interaction among different user roles.
+Enhance system reliability with Spring Security integration for robust authentication and authorization.
+Improve developer experience and API documentation clarity through Swagger integration.
+By integrating Spring Security for enhanced security measures and Swagger for comprehensive API documentation, the TechnoElevate Learning and Mentoring System aims to ensure data security, provide a user-friendly interface, and simplify the development and maintenance processes.
