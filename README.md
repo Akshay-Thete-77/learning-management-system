@@ -20,7 +20,6 @@ This project involves creating an application encompassing essential components:
    #### Mentor
    - **Security Integration:** Implementation of Spring Security for robust authentication and role-based authorization.
    - **Dashboard and Employee Management:** Access to batch statistics, attendance, creation of mocks, performance analytics, and employee status management.
-   - **Data Export:** Ability to download Employee, Attendance, and Mock Data in Excel format.
 
    #### Employee/Trainee
    - **Profile Management:** Add/Edit personal, educational, and contact details.
