@@ -40,10 +40,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable();
-		http.authorizeRequests().antMatchers("/public/**").permitAll();
+		http.authorizeRequests().antMatchers("/api/v1/public/**").permitAll();
 		http.authorizeHttpRequests().antMatchers(WHITE_LIST_URL).permitAll();
-		http.authorizeRequests().antMatchers("/admin/**").authenticated();
-		http.authorizeRequests().antMatchers("/mentor/**").authenticated();
+		http.authorizeRequests().antMatchers("/api/v1/admin/**").authenticated();
+		http.authorizeRequests().antMatchers("/api/v1/mentor/**").authenticated();
 		http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 		http.addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);
 	}
